@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    padding: 15px 0;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+}
+
+nav.scrolled {
+    background: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* PAGE SECTIONS */
+.page {
+    height: 100vh;
+    padding: 100px 40px 40px;
+    /* display: flex;
+    gap: 40px; */
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(to right, #7b4397, #dc2430);
+    color: white;
+}
+
+#about {
+    background: #f2f2f2;
+}
+
+#services {
+    background: #dff0ff;
+}
+
+#contact {
+    background: #ffe6e6;
+   
+}
+
+/* BUTTON STYLE */
+.btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: #000;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* CARD INTERACTION */
+.card {
+    width: 200px;
+    height: 150px;
+    background: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: #ffefc6;
+}
+
+/* SERVICES BOX */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-box {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    transform: translateY(-10px) scale(1.1);
+    background: #fffae6;
+}
